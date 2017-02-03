@@ -13,6 +13,7 @@
 		A00CE9001E43F4B600C02295 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A00CE8FF1E43F4B600C02295 /* Assets.xcassets */; };
 		A00CE9031E43F4B600C02295 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A00CE9011E43F4B600C02295 /* LaunchScreen.storyboard */; };
 		A08697421E43F96100F5C097 /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08697411E43F96100F5C097 /* PhotosViewController.swift */; };
+		A08697461E442D0B00F5C097 /* PhotoViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08697451E442D0B00F5C097 /* PhotoViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		A00CE9021E43F4B600C02295 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A00CE9041E43F4B600C02295 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A08697411E43F96100F5C097 /* PhotosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
+		A08697451E442D0B00F5C097 /* PhotoViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoViewCell.swift; sourceTree = "<group>"; };
 		BD7FE7022DC7483F6A5DFEAE /* Pods_Tumblr_Client.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tumblr_Client.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -67,6 +69,7 @@
 				A00CE9011E43F4B600C02295 /* LaunchScreen.storyboard */,
 				A00CE9041E43F4B600C02295 /* Info.plist */,
 				A08697411E43F96100F5C097 /* PhotosViewController.swift */,
+				A08697451E442D0B00F5C097 /* PhotoViewCell.swift */,
 			);
 			path = "Tumblr-Client";
 			sourceTree = "<group>";
@@ -214,6 +217,7 @@
 			files = (
 				A00CE8F91E43F4B600C02295 /* AppDelegate.swift in Sources */,
 				A08697421E43F96100F5C097 /* PhotosViewController.swift in Sources */,
+				A08697461E442D0B00F5C097 /* PhotoViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
