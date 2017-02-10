@@ -19,11 +19,11 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PhotoCell" rowHeight="390" id="MoS-dl-JhO" customClass="PhotoViewCell" customModule="Tumblr_Client" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="PhotoCell" rowHeight="390" id="MoS-dl-JhO" customClass="PhotoViewCell" customModule="Tumblr_Client" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="92" width="375" height="390"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="MoS-dl-JhO" id="069-bE-OdQ">
-                                            <frame key="frameInset" width="375" height="389"/>
+                                            <frame key="frameInset" width="342" height="389.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" id="gzl-9w-xmH">
@@ -55,6 +55,7 @@
                                             <outlet property="posterImage" destination="gzl-9w-xmH" id="3SP-NS-fdE"/>
                                             <outlet property="summary" destination="N2s-rH-Y1F" id="MsI-gW-UUV"/>
                                             <outlet property="userLabel" destination="Vhl-Co-9Pv" id="aKr-TD-4SD"/>
+                                            <segue destination="oqI-n2-5d4" kind="push" id="zZp-u4-NfU"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -70,6 +71,30 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mCw-FM-eJg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="634.5" y="160.5"/>
+        </scene>
+        <!--Photo Details View Controller-->
+        <scene sceneID="Eej-R1-eXO">
+            <objects>
+                <viewController id="oqI-n2-5d4" customClass="PhotoDetailsViewController" customModule="Tumblr_Client" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Nh6-dS-T9x">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" id="USU-bO-mAI">
+                                <frame key="frameInset" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="JyZ-c0-aFl"/>
+                    <connections>
+                        <outlet property="photoView" destination="USU-bO-mAI" id="Rv0-UV-wLr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cfx-7X-RVn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1111.5" y="169.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="BPf-aX-ygg">

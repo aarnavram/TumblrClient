@@ -6,6 +6,8 @@ target 'Tumblr-Client' do
   use_frameworks!
   
   pod 'AFNetworking', '~> 3.0'
+  pod 'MBProgressHUD'
+
 
   # Pods for Tumblr-Client
 
